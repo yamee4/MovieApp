@@ -1,2 +1,3 @@
-# AnimeApp
-A first project using ReactJS
+# MovieApp
+A first project using ReactJS (kinda fail)
+
