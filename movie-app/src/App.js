@@ -34,19 +34,19 @@ function App() {
   }
 
   const openPopUp = id =>{
-    axios(APIURL + "&id=" + id).then(({data}) =>{
-      let res = data;
+    axios(APIURL + "&id=" + id).then(({ data }) => {
+      let result = data;
 
-      console.log(res);
-      
-      setSearchState(prevState =>{
-        return {...prevState, selected:res};
+      console.log(result);
+
+      setSearchState(prevState => {
+        return { ...prevState, selected: result }
       });
     });
   }
 
   const closePopUp = () =>{
-    searchState(prevState =>{
+    setSearchState(prevState =>{
       return {...prevState, selected:{}};
     });
   }
@@ -64,5 +64,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
