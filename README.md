@@ -1,3 +1,2 @@
 # MovieApp
-A first project using ReactJS (kinda fail)
-
+A first project using ReactJS
